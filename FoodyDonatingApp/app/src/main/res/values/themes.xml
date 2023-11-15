@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodyDonatingApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/brinjal</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+
+    </style>
+
+
+
+
+    <style name="Theme.FoodyDonatingApp" parent="Base.Theme.FoodyDonatingApp" />
+</resources>

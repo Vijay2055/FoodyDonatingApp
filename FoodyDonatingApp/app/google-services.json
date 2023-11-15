@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "836837054736",
+    "project_id": "foody-donating-app",
+    "storage_bucket": "foody-donating-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:836837054736:android:964792b1540805d1df6d95",
+        "android_client_info": {
+          "package_name": "com.vz.foodydonatingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "836837054736-svrumrt0ng15th1a6ci3e510vuglh2ho.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCKxIXs0doWI3QY1g9JRKLy_aW1u6Rp_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "836837054736-svrumrt0ng15th1a6ci3e510vuglh2ho.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

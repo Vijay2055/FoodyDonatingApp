@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:elevation="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pickup_profile"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/monkey"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/pickup_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Ready To Pickup"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#7F4C73"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/pickUPCall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/pickUpSms"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.473"
+                app:srcCompat="@drawable/call" />
+
+            <ImageView
+                android:id="@+id/pickUpSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.5"
+                app:srcCompat="@drawable/sms" />
+
+            <TextView
+                android:id="@+id/pickupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ajay"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/pickUPCall"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/pickUpAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10kg of rice and daal dsaffsdasa gaa gd gad gd gd"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/pickUPAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/location"
+            android:textColor="@color/black"
+            android:text="Lumbini,Paraspur"/>
+
+        <TextView
+            android:id="@+id/pickUpTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:drawableLeft="@drawable/baseline_access_time_filled_24"
+            android:textColor="@color/black"
+            android:text="7:00 am - 9:00 pm" />
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

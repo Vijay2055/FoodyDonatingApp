@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottomAppbar"
+           android:layout_gravity="bottom"
+            android:backgroundTint="@color/brinjal"
+            app:fabCradleMargin="10dp"
+            app:fabCradleRoundedCornerRadius="50dp">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bnView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_item"
+                android:background="@android:color/transparent"
+               />
+
+
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flaotinActionButton"
+            app:layout_anchor="@id/bottomAppbar"
+            android:src="@drawable/add"
+            app:maxImageSize="40dp"
+         />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>
